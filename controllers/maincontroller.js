@@ -29,8 +29,8 @@ module.exports={
        response.render("form")
     },
     getDetail:(request,response)=>{
-        let user=request.params
-        console.log(request.params)
+        let user=request.params.user
+       
         response.render("detail",{messages:messages,user:user})
     }
 
